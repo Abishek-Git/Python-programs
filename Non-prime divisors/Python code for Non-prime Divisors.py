@@ -1,3 +1,25 @@
+"""
+Mathematics: Non-prime divisors
+
+For a given intergers N, write a program to find how many non-prime divisors
+it has and print them in descending order or ascending order
+
+====================
+sample input
+24    --- denotes N
+====================
+
+sample output
+6
+1 4 6 8 12 24     ----ascending order
+-------------------
+6
+24 12 8 6 4 1     ----decending order
+====================
+
+"""
+
+
 n = int(input())
 list = []
 
@@ -22,8 +44,18 @@ for m in non_list:
 
 non_list.append(1)
 print(count)
+
+#----------------------use below code as per question-------------
+
+#Ascending Order
+for i in non_list[::-1]:
+    print(i, end=" ")
+
+#Descending Order
 for i in non_list:
     print(i, end=" ")
+
+ 
 
 
  
